@@ -1,43 +1,57 @@
-```markdown
-# Chef's Café – Front-End Project
+---
 
-A responsive and visually engaging front-end application for a fictional restaurant, **Chef's Café**. Built using React and styled with Tailwind CSS, the project showcases recipes, a hero banner, a navigation bar, and a clean footer layout.
+# Chef’s Café – Front-End Project
 
 ## Table of Contents
 
 - [Overview](#overview)
+
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+
 - [Features](#features)
 - [Project Structure](#project-structure)
 - [Tech Stack](#tech-stack)
 - [Getting Started](#getting-started)
+
   - [Installation](#installation)
-  - [Running the App](#running-the-app)
+  - [Development](#development)
+
 - [Available Scripts](#available-scripts)
-- [Credits](#credits)
+- [Styling](#styling)
 - [Author](#author)
 
 ---
 
 ## Overview
 
-This project is a front-end UI for a recipe café website. Users can browse through chef-curated recipes displayed in cards, view a banner section, and interact with a sleek, responsive layout.
+A modern, responsive front-end application for a fictional recipe restaurant called **Chef’s Café**. Built using React, Tailwind CSS, and Vite, this project provides a clean and dynamic interface with reusable components and static JSON-powered data.
+
+### Screenshot
+
+![](./src/assets/banner.png)
+
+### Links
+
+- **Live Demo**: [https://your-cafe-url.vercel.app/](#)
+- **GitHub Repo**: [https://github.com/bayzidalways/chef-s-cafe-front_end-project.git](https://github.com/bayzidalways/chef-s-cafe-front_end-project.git)
 
 ---
 
 ## Features
 
-- 🍽️ Beautiful landing page layout
-- 🧑‍🍳 Dynamic recipe display from a JSON file
-- 🎨 Tailwind CSS for rapid, utility-first styling
-- ⚛️ Component-based architecture with React
-- 🌐 Fully responsive layout
-- 🧹 Linting via ESLint for code quality
+- 🍳 Dynamic Recipe Cards from `recipes.json`
+- 🧑‍🍳 Responsive design with mobile-first approach
+- 🔄 Component-driven architecture
+- ⚛️ React + Vite for blazing-fast development
+- 🎨 Tailwind CSS for styling
+- ✅ ESLint for code quality
 
 ---
 
 ## Project Structure
-```
 
+```
 bayzidalways-chef-s-cafe-front_end-project/
 ├── README.md
 ├── eslint.config.js
@@ -46,24 +60,23 @@ bayzidalways-chef-s-cafe-front_end-project/
 ├── tailwind.config.js
 ├── vite.config.js
 ├── public/
-│ └── recipes.json # Sample data for recipe cards
+│   └── recipes.json
 └── src/
-├── App.css
-├── App.jsx # Main application layout
-├── index.css
-├── main.jsx # Entry point
-└── components/ # Reusable UI components
-├── banner/
-│ └── Banner.jsx
-├── footer/
-│ └── Footer.jsx
-├── nav/
-│ └── Navbar.jsx
-└── section/
-├── RecipeCardSection.jsx
-└── Section.jsx
-
-````
+    ├── App.css
+    ├── App.jsx
+    ├── index.css
+    ├── main.jsx
+    └── components/
+        ├── banner/
+        │   └── Banner.jsx
+        ├── footer/
+        │   └── Footer.jsx
+        ├── nav/
+        │   └── Navbar.jsx
+        └── section/
+            ├── RecipeCardSection.jsx
+            └── Section.jsx
+```
 
 ---
 
@@ -72,7 +85,7 @@ bayzidalways-chef-s-cafe-front_end-project/
 - [React](https://reactjs.org/)
 - [Vite](https://vitejs.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [ESLint](https://eslint.org/) (for linting and formatting)
+- [ESLint](https://eslint.org/)
 
 ---
 
@@ -80,64 +93,46 @@ bayzidalways-chef-s-cafe-front_end-project/
 
 ### Installation
 
-1. **Clone the repository**
-
-```bash
-git clone git@github.com:bayzidalways/chef-s-cafe-front_end-project.git
-cd chef's-cafe
-````
-
-2. **Install dependencies**
+Install dependencies:
 
 ```bash
 npm install
 ```
 
----
+### Development
 
-### Running the App
-
-Start the development server:
+Start the local development server:
 
 ```bash
 npm run dev
 ```
 
-Once compiled, visit `http://localhost:5173` in your browser.
+Then open your browser at [http://localhost:5173](http://localhost:5173)
 
 ---
 
 ## Available Scripts
 
-| Script            | Description                     |
-| ----------------- | ------------------------------- |
-| `npm run dev`     | Start development server (Vite) |
-| `npm run build`   | Build the app for production    |
-| `npm run preview` | Preview the production build    |
-| `npm run lint`    | Run ESLint on project files     |
+| Script            | Description                          |
+| ----------------- | ------------------------------------ |
+| `npm run dev`     | Start development server using Vite  |
+| `npm run build`   | Build the project for production     |
+| `npm run preview` | Preview the built production version |
+| `npm run lint`    | Run ESLint on all source files       |
 
 ---
 
-## Credits
+## Styling
 
-- Recipe data sourced from `public/recipes.json`
-- Tailwind CSS for styling
-- Vite for fast development tooling
+This project uses **Tailwind CSS** for responsive and utility-first styling. You can customize styles in `tailwind.config.js` or extend it as per your project needs.
 
 ---
 
 ## Author
 
-- 👨‍💻 [MD BAYZID](#)
-- 🔗 [LinkedIn – @MD BAYZID](https://www.linkedin.com/in/md-bayzid-211b67345)
+- Website – [MD BAYZID](#)
+- LinkedIn – [@MD BAYZID](https://www.linkedin.com/in/md-bayzid-211b67345)
 
 ---
 
-> This project is for educational and portfolio purposes. Feel free to fork and customize it for your own use.
-
-```
-
----
-
-
-```
+> 💡 Feel free to fork this project and customize it for your own café, food blog, or restaurant website!
